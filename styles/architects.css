@@ -6,7 +6,15 @@
 } 
 
 .btn-primary{
-    
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 20px 25px;
+    border: none;
+    cursor: pointer;
 }
                                      /* header */
 header{
@@ -40,18 +48,39 @@ nav li a{
     text-decoration: none;
     color:  #424242;
 }
-                                         /* banner */
+ 
+                                  /* banner */ 
+                                 
 .banner-content{
-    width: 800px;
+    max-width: 800px;
     text-align: center;
     margin: 0 auto;
 } 
 .banner-title{
     font-size: 4rem;
-    font-weight: 700px;
+    font-weight: 700;
     color:  #131313;
 } 
 .banner-text{
    color:  #727272; 
-   width: 800px;
-}                                       
+   width: 800;
+}   
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}  
+   /*                                  responsive                                */
+   @media  screen and (max-width:576px) {
+    header{
+        padding: 20px;
+       
+    }
+    nav{
+        flex-direction: column;
+        
+    }
+    banner{
+
+    }
+    
+   }
